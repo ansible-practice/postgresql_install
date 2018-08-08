@@ -2,3 +2,13 @@
 # defaults file for postgresql_install
 
 pgsql_version: 9.6
+pgsql_rpm: 96
+pgsql_os: centos
+pgsql_repo: "https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-{{ pgsql_os }}96-9.6-3.noarch.rpm"
+pgsql_packages:
+  - "postgresql{{ pgsql_rpm }}-server"
+  - "postgresql{{ pgsql_rpm }}-docs"
+  - "postgresql{{ pgsql_rpm }}-devel"
+  - "postgresql{{ pgsql_rpm }}-contrib"
+  - libselinux-python
+  #  - 

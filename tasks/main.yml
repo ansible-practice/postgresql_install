@@ -2,9 +2,14 @@
 # tasks file for postgresql_install
 
   - block:
-  - name: install required pgsql repository
-    yum:
-      name: https://download.postgresql.org/pub/repos/yum/{{ pgsql_version }}/redhat/rhel-{{ ansible_distribution_version }}-x86_64/
-      state: installed
+    - name: install required pgsql repository for {{ pgsql_version }}
+      yum:
+        name: "{{ pgsql_repo }}"
+        state: installed
 
-  - name: 
+    - name: install postgresql database packages {{ pgsql_version }}
+      yum:
+        name: "{{ pgsql_packages }}"
+        state: installed
+
+
