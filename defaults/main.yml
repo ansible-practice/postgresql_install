@@ -1,0 +1,4 @@
+---
+# defaults file for postgresql_install
+
+pgsql_version: 9.6
