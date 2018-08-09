@@ -1,4 +1,4 @@
-#image: centos/systemd
+image: centos/systemd
 before_script:
   - python --version
   - yum install epel-release -y
@@ -10,13 +10,13 @@ before_script:
 
 molecule:
   stage: test
-  tags:
-    - pip36
-    - docker
+  #tags:
+  #  - pip36
+  #  - docker
 
   script:
     - python --version
-    - pip36 install ansible molecule 'docker<3.0'
+    - pip36 install ansible molecule docker
     - ansible --version
     - molecule --version
     - molecule test 
