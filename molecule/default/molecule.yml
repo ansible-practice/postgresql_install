@@ -8,7 +8,7 @@ lint:
   enabled: False
 platforms:
   - name: instance
-    image: centos:systemd
+    image: centos/systemd:latest
     image_version: latest
     privileged: True
 provisioner:
