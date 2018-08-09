@@ -1,15 +1,7 @@
 image: centos/7
 before_script:
   - pip install ansible molecule
-test:
-  script:
-  - molecule test
-  except:
-  - master
 
-postgres:
-  artifacts:
-    paths:
-    - public
-  only:
-  - master
+molecule:
+  script:
+    - molecule test 
