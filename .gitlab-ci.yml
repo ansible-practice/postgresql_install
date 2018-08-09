@@ -1,5 +1,6 @@
 image: centos
 before_script:
+  - yum install pip
   - pip install ansible molecule
 
 molecule:
