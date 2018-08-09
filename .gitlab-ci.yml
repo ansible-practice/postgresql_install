@@ -7,7 +7,9 @@ test:
   except:
   - master
 
-#postgres:
-#  artifacts:
-#    paths:
-#    - public
+postgres:
+  artifacts:
+    paths:
+    - public
+  only:
+  - master
