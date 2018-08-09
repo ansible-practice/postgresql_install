@@ -16,7 +16,7 @@ molecule:
 
   script:
     - python --version
-    - pip36 install ansible molecule docker
+    - pip install ansible molecule docker
     - ansible --version
     - molecule --version
     - molecule test 
