@@ -1,4 +1,4 @@
-image: centos/systemd
+#image: centos/systemd
 before_script:
   - python --version
   - yum install epel-release -y
