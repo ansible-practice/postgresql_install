@@ -13,9 +13,8 @@ molecule:
   tags:
     - docker
   script:
-    - docker -v
     - python --version
-    - pip install ansible molecule
+    - pip install ansible molecule 'docker<3.0'
     - ansible --version
     - molecule --version
     - molecule test 
