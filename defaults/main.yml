@@ -2,6 +2,7 @@
 # defaults file for postgresql_install
 
 pgsql_version: 9.6
+pgsql_initdb: "/usr/pgsql-9.6/bin/postgresql96-setup initdb"
 pgsql_rpm: 96
 pgsql_os: centos
 pgsql_repo: "https://download.postgresql.org/pub/repos/yum/9.6/redhat/rhel-7-x86_64/pgdg-{{ pgsql_os }}96-9.6-3.noarch.rpm"

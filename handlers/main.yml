@@ -1,2 +1,9 @@
 ---
 # handlers file for postgresql_install
+
+  - name: start the database {{ pgsql_version }}
+    systemd:
+      name: postgresql-9.6
+      state: started
+      enabled: True
+

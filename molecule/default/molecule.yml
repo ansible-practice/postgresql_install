@@ -10,6 +10,7 @@ platforms:
   - name: instance
     image: centos:7
     image_version: latest
+    privileged: True
 provisioner:
   name: ansible
   lint:

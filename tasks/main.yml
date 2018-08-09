@@ -12,4 +12,8 @@
         name: "{{ pgsql_packages }}"
         state: installed
 
-
+    - name: initialize the database {{ pgsql_version }}
+      command: '{{ pgsql_initdb }}'
+      args:
+        creates: /var/lib/pgsql/9.6/data/
+      notify: start the database {{ pgsql_version }}
