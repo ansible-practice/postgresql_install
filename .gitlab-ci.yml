@@ -2,7 +2,7 @@ image: centos
 before_script:
   - python --version
   - yum install epel-release -y
-  - yum install python-pip gcc -y
+  - yum install python-pip gcc python-devel -y
   - pip install ansible molecule
 
 molecule:
