@@ -1,4 +1,4 @@
-image: centos/7
+image: centos
 before_script:
   - pip install ansible molecule
 
