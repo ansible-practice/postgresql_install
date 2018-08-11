@@ -24,7 +24,7 @@ scenario:
     #- converge
     # -   idempotence
     - side_effect
-    - verify
+    #- verify
     #- destroy
 verifier:
   name: testinfra
