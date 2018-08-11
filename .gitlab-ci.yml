@@ -17,6 +17,8 @@ molecule:
   script:
     - python --version
     - pip install ansible molecule docker
+    - yum install epel-release -y
+    - yum install docker -y 
     - ansible --version
     - molecule --version
     - molecule test 
