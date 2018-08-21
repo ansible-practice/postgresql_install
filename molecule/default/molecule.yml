@@ -21,7 +21,7 @@ scenario:
   test_sequence:
     #- create
     - prepare
-    - converge
+    #- converge
     # -   idempotence
     - side_effect
     #- verify
