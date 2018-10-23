@@ -12,4 +12,3 @@ pgsql_packages:
   - "postgresql{{ pgsql_rpm }}-devel"
   - "postgresql{{ pgsql_rpm }}-contrib"
   - libselinux-python
-  #  - 
