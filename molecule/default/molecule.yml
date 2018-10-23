@@ -15,19 +15,19 @@ provisioner:
   name: ansible
   lint:
     name: ansible-lint
-    enabled: False
+    enabled: True
 scenario:
   name: default
-  test_sequence:
+  # test_sequence:
     #- create
-    - prepare
+    #    - prepare
     #- converge
     # -   idempotence
-    - side_effect
+    #    - side_effect
     #- verify
     #- destroy
 verifier:
   name: testinfra
   lint:
     name: flake8
-    enabled: False
+    enabled: True
